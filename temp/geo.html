@@ -28,9 +28,7 @@ p {
     </div>
 <script>
   navigator.geolocation.getCurrentPosition(function(location) {
-    console.log(location.coords.latitude);
-    console.log(location.coords.longitude);
-    console.log(location.coords.accuracy);
+    document.getElementById("size").innerHTML=location.coords.latitude + " and " + location.coords.longitude + " and " + location.coords.accuracy; 
   });
 </script>
   </body>
